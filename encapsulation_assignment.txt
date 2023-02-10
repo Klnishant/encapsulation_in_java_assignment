@@ -1,0 +1,26 @@
+Q1. What is encapsulation in java? why is it called data hiding?
+Ans--> Encapsulation is an important concept in object-oriented programming (OOP) and is a mechanism for restricting direct access to an object's internal data and behavior. It is an approach to manage the complexity of a software system by dividing the system into smaller, manageable parts.
+
+In Java, encapsulation is achieved by declaring class variables as private and providing public methods for accessing and modifying the values of those variables. This is called data hiding because the implementation details of the class are hidden from other classes and objects, and the class's internal state is protected from unintended changes.
+For example, consider a class BankAccount that represents a bank account. The class might have private variables balance and accountNumber to represent the current balance and the account number of the account, respectively. The class might provide public methods getBalance and deposit to allow other classes and objects to access and modify the balance of the account. The implementation details of the class, such as the exact way the balance is calculated, are hidden from other classes and objects, and the internal state of the account is protected from unintended changes.
+
+public class BankAccount {
+    private double balance;
+    private int accountNumber;
+
+    public BankAccount(int accountNumber, double initialBalance) {
+        this.balance = initialBalance;
+        this.accountNumber = accountNumber;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+    public void deposit(double amount) {
+        balance += amount;
+    }
+}
+
+Q2. What are the important features of Encapsulation?
+Ans--> 
